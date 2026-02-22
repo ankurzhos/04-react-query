@@ -44,10 +44,10 @@ export default function App() {
   };
 
   useEffect(() => {
-    if (isSuccess && movies.length === 0) {
+    if (isSuccess && data?.movies?.length === 0) {
       toast.error("No movies found for your request.");
     }
-  }, [isSuccess, movies]);
+  }, [isSuccess, data?.movies]);
 
   return (
     <>
